@@ -19,7 +19,7 @@ after_script:
   - git init
   - git add --all .
   - git commit -m "Travis CI 自动生成"
-  - git push --force --quiet "https://${GH_Token}@${url}" master:${branche}
+  - git push --force --quiet "https://${TO_KEN}@${url}" master:${branche}
 
 
 cache: yarn
