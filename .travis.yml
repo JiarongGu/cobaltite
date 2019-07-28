@@ -1,0 +1,25 @@
+language: node_js
+
+node_js:
+  - "10.16.0"
+
+
+before_install:
+  - export TZ='Asia/Shanghai'
+  - yarn add gulp-cli hexo-cli -g
+
+install:
+  - yarn
+
+
+script: yarn build
+
+after_script:
+  - cd ./public
+  - git init
+  - git add --all .
+  - git commit -m "Travis CI 自动生成"
+  - git push --force --quiet "https://${GH_Token}@${url}" master:${branche}
+
+
+cache: yarn
