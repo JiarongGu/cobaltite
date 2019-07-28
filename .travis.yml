@@ -23,3 +23,8 @@ after_script:
 
 
 cache: yarn
+
+
+branches:
+  only:
+    - master
