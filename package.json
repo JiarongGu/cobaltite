@@ -6,6 +6,7 @@
     "version": "3.9.0"
   },
   "scripts": {
+    "start": "hexo server",
     "server": "hexo server",
     "build": "hexo cl && hexo g && gulp"
   },
