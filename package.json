@@ -7,7 +7,6 @@
   },
   "scripts": {
     "start": "hexo server",
-    "server": "hexo server",
     "build": "hexo cl && hexo g && gulp"
   },
   "dependencies": {
